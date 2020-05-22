@@ -8,4 +8,4 @@ jobs:
       - checkout
       - run: sudo npm install -g @lhci/cli@0.4.x
       - run: lhci collect --url=https://www.ivankristianto.com
-      - run: lhci upload
+      - run: lhci upload --githubAppToken=$LHCI_GITHUB_APP_TOKEN
