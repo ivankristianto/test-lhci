@@ -15,5 +15,7 @@ jobs:
           npm install -g @lhci/cli@0.5.x
       - name: Run Lighthouse CI
         run: |
-          lhci collect --url=https://www.ivankristianto.com
+          lhci collect --url=https://www.ivankristianto.com --numberOfRuns=1 --silent
+      - name: Upload Artifact to Lighthouse CI Server
+        run: |
           lhci upload
