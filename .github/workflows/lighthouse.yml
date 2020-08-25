@@ -12,7 +12,7 @@ jobs:
           node-version: 12.x
       - name: Install Lighthouse CI
         run: |
-          npm install -g @lhci/cli@0.5.x
+          npm install -g @lhci/cli@0.4.x
       - name: Run Lighthouse CI
         run: |
           lhci collect --url=https://www.ivankristianto.com --numberOfRuns=1 --silent
